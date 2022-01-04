@@ -1,0 +1,22 @@
+{
+  "name": "border-radius",
+  "version": "1.0.0",
+  "description": "This project was created in order to improve my knowledge of javascript",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch src/scss -o src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimascamillo/border-radius.git"
+  },
+  "author": "Dimas Camillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimascamillo/border-radius/issues"
+  },
+  "homepage": "https://github.com/dimascamillo/border-radius#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

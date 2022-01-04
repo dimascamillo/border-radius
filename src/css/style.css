@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  background-color: #b3ecff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; }
+  body .container {
+    width: 1070px;
+    max-width: 1070px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly; }
+  body .title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    color: #b300b3;
+    cursor: pointer;
+    transform: .5s all ease-in-out;
+    position: relative;
+    margin-bottom: 5rem; }
+    body .title:after {
+      position: absolute;
+      content: "";
+      background: #b300b3;
+      width: 0;
+      height: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -1rem;
+      transition: .1s ease-in; }
+    body .title:hover:after {
+      width: 300px; }
+  body .topRadius {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto; }
+  body .box {
+    background-color: white;
+    max-width: 300px;
+    max-height: 300px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #b300b3;
+    margin: auto; }
+  body .bottomRadius {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto; }
+  body form {
+    display: flex;
+    flex-direction: column; }
+    body form input {
+      width: 300px;
+      height: 50px;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px; }
+    body form input[type="submit"] {
+      margin-bottom: .5rem;
+      border-radius: unset; }
+    body form .btn-generator {
+      background-color: #ff3300;
+      color: white;
+      cursor: pointer;
+      transition: .5s all ease-in-out; }
+      body form .btn-generator:hover {
+        background-color: #be4d31; }
+    body form .btn-clear {
+      background-color: #00b33c;
+      color: white;
+      cursor: pointer;
+      transition: .5s all ease-in-out; }
+      body form .btn-clear:hover {
+        background-color: #09dd4f; }
