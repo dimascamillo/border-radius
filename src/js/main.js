@@ -50,4 +50,8 @@ topLeft.value = ""
 topRight.value = ""
 bottomLeft.value = ""
 bottomRight.value = ""
+box.borderTopLeftRadius = "0px"
+box.borderTopRightRadius = "0px"
+box.borderBottomRightRadius = "0px"
+box.borderBottomLeftRadius = "0px"
 }
