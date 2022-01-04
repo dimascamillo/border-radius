@@ -11,43 +11,31 @@ let btnClear = document
   });
 
 topLeft.addEventListener("change", function (e) {
-  borderLeft();
+  border("borderTopLeftRadius", topLeft.value);
   e.target.value == "" && clearField();
 });
 
 topRight.addEventListener("change", function (e) {
-  borderRight();
+  border("borderTopRightRadius", topRight.value);
   e.target.value == "" && clearField();
 });
 
 bottomRight.addEventListener("change", function (e) {
-  borderBottomRight();
+  border("borderBottomRightRadius", bottomRight.value);
   e.target.value == "" && clearField();
 });
 
 bottomLeft.addEventListener("change", function (e) {
-  borderBottomLeft();
+  border("borderBottomLeftRadius", bottomLeft.value);
   e.target.value == "" && clearField();
 });
 
-//function to change the border-radius Top-left
-function borderLeft() {
-  box.borderTopLeftRadius = topLeft.value + "px";
-}
+btnGenerator.addEventListener("click", (e) => {
+  e.preventDefault();
+});
 
-//function to change the border-radius Top-Right
-function borderRight() {
-  box.borderTopRightRadius = topRight.value + "px";
-}
-
-//function to change the border-radius Bottom-Right
-function borderBottomRight() {
-  box.borderBottomRightRadius = bottomRight.value + "px";
-}
-
-//function to change the border-radius Bottom-left
-function borderBottomLeft() {
-  box.borderBottomLeftRadius = bottomLeft.value + "px";
+function border(side, size) {
+  box[side] = size + "px";
 }
 
 //function to clear the form
